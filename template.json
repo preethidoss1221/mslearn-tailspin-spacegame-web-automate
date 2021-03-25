@@ -18,29 +18,12 @@
             "type": "string",
             "minLength": 3,
             "maxLength": 11
-        },
-        "uniqueSuffix": {
-            "type": "string",
-            "minLength": 3,
-            "maxLength": 11
         }
     },
     "variables": {
-        "uniqueName": "[concat(parameters('deployPrefix'), parameters('uniqueSuffix'))]"
+        "uniqueName": "[parameters('deployPrefix')]"
     },
     "resources": [
-        {
-            "type": "Microsoft.Sql/servers",
-            "apiVersion": "2015-05-01-preview",
-            "name": "[concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName'))]",
-            "location": "[parameters('location')]",
-            "kind": "v12.0",
-            "properties": {
-                "administratorLogin": "azuresql",
-                "administratorLoginPassword": "[parameters('adminPassword')]",
-                "version": "12.0"
-            }
-        },
         {
             "type": "Microsoft.Web/serverfarms",
             "apiVersion": "2016-09-01",

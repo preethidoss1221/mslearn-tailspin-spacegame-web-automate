@@ -107,5 +107,5 @@ stages:
             displayName: 'Azure App Service Deploy: website'
             inputs:
               azureSubscription: 'tailspinconnectionfordocker'
-              appName: 'tailspin-space-game-web-dev-$(uniqueSuffix)'
+              appName: 'tailspin-space-game-web-dev-400'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'

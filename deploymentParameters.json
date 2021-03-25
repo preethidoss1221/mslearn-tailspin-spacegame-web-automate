@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "deployPrefix": {
-            "value": "-dev-ppdoss"
+            "value": "-dev-ppdossaz400"
         }
     }
 }

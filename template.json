@@ -18,10 +18,15 @@
             "type": "string",
             "minLength": 3,
             "maxLength": 11
+        },
+        "uniqueSuffix": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 11
         }
     },
     "variables": {
-        "uniqueName": "[parameters('deployPrefix')]"
+        "uniqueName": "[concat(parameters('deployPrefix'), parameters('uniqueSuffix'))]"
     },
     "resources": [
         {

@@ -81,7 +81,7 @@ stages:
         ConnectedServiceName: 'tailspinconnectionfordocker'
         subscriptionName: '$(subscription)'
         action: 'Create Or Update Resource Group'
-        resourceGroupName: 'az400OERG'
+        resourceGroupName: 'az400ChevronRG_New'
         location: '$(location)'
         templateLocation: 'Linked artifact'
         csmFile: 'template.json'

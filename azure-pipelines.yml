@@ -106,6 +106,6 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'tailspinconnectionfordocker'
+              azureSubscription: 'scfordocker'
               appName: 'tailspin-space-game-web-dev-400'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
